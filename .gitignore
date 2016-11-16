@@ -1,1 +1,6 @@
+#FOLDERS:
 node_modules
+
+#FILE GLOBS:
+**/*.js.map
+**/*.js
