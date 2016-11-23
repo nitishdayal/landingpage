@@ -1,0 +1,93 @@
+#nav-bar {
+  background-color: #010101;
+  color: lightslategray;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-variant: small-caps;
+	margin-bottom: 0;
+  overflow: auto;
+  text-transform: lowercase;
+}
+
+.navbar-fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.nav-links {
+  padding: 0;
+  text-align: center;
+}
+
+.nav-links li {
+	display: inline-block;
+  width: 25%;
+  height: 30px;
+  line-height: 30px;
+  -webkit-transition: background-color 300ms linear;
+  -moz-transition: background-color 300ms linear;
+  transition: background-color 300ms linear;
+}
+
+.nav-links li:hover {
+  background-color: #455A64;
+}
+
+.nav-links li.active {
+  background-color: #455A64;
+}
+
+.nav-links li a {
+  color: lightgray;
+  display: block;
+  font-weight: lighter;
+  height: 100%;
+  line-height: 1.2em;
+  margin: 0;
+	padding: 0;
+	text-decoration: none;
+  -webkit-transition: all 300ms ease-in;
+  -moz-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
+  width: 100%;
+}
+
+.nav-links li a:hover{
+  color: white;
+  cursor: crosshair;
+  letter-spacing: .12em;
+}
+
+.nav-links li a.active {
+  color: white;
+  letter-spacing: .12em;
+}
+
+/*.nav-links li a.active::after{
+  content: "\2190";
+}*/
+
+#content {
+  position: relative;
+}
+
+.content-push {
+  top: 2rem;
+}
+
+@media (min-width: 600px) {
+  .nav-links {
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .nav-links li {
+    display: inline-block;
+    width: 25%;
+  }
+
+  .nav-links li a {
+    font-size: 1.5em;
+  }
+}
