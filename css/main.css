@@ -50,12 +50,8 @@ section p, #portfolio-container {
 
 #contact-list li img {
   height: 34px;
-  vertical-align: text-top;
+  vertical-align: bottom;
 }
-
-/*#contact-list li:not(:last-child)::after{
-  content: "/"
-}*/
 
 #contact-list li a {
   color: white;
