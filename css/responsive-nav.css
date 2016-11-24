@@ -1,10 +1,9 @@
 #nav-bar {
   background-color: #010101;
-  color: lightslategray;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-variant: small-caps;
 	margin-bottom: 0;
-  overflow: auto;
+  overflow: none;
   text-transform: lowercase;
 }
 
@@ -31,17 +30,17 @@
 }
 
 .nav-links li:hover {
-  background-color: #455A64;
+  background-color: #1D366E;
 }
 
 .nav-links li.active {
-  background-color: #455A64;
+  background-color: steelblue;
 }
 
 .nav-links li a {
   color: lightgray;
   display: block;
-  font-size: 1em;
+  font-size: 1.1em;
   font-weight: 400;
   height: 100%;
   margin: 0;
@@ -50,44 +49,23 @@
   -webkit-transition: all 300ms ease-in;
   -moz-transition: all 300ms ease-in;
   transition: all 300ms ease-in;
-  width: 100%;
 }
 
 .nav-links li a:hover{
   color: white;
   cursor: crosshair;
-  letter-spacing: .1em;
+  letter-spacing: .06rem;
 }
 
 .nav-links li a.active {
   color: white;
-  letter-spacing: .1em;
+  font-weight: 500;
+  letter-spacing: .06rem;
 }
 
-/*.nav-links li a.active::after{
-  content: "\2190";
-}*/
-
-#content {
-  position: relative;
-}
-
-.content-push {
-  top: 2rem;
-}
-
-@media (min-width: 600px) {
+@media (min-width: 640px) {
   .nav-links {
-    width: 75%;
+    width: 60%;
     margin: 0 auto;
-  }
-
-  .nav-links li {
-    display: inline-block;
-    width: 25%;
-  }
-
-  .nav-links li a {
-    font-size: 1.5em;
   }
 }
