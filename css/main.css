@@ -16,14 +16,23 @@ body {
 }
 
 section {
+  padding: 2rem 0;
+  height: 1200px;
+  overflow: auto;
+}
+
+section:nth-child(odd) {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, .1)), to(transparent));
   background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, .1), transparent);
   background-image: -moz-linear-gradient(top, rgba(255, 255, 255, .1), transparent);
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, .1), transparent);
-  padding: 2rem 2rem 2rem 0;
-  height: 1000px;
-  overflow: auto;
-  margin-bottom: 2rem;
+}
+
+section:nth-child(even) {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(255, 255, 255, .1)));
+  background-image: -webkit-linear-gradient(top, transparent, rgba(255, 255, 255, .1));
+  background-image: -moz-linear-gradient(top, transparent, rgba(255, 255, 255, .1));
+  background-image: linear-gradient(to bottom, transparent, rgba(255, 255, 255, .1));
 }
 
 section p, #portfolio-container {
@@ -50,12 +59,8 @@ section p, #portfolio-container {
 
 #contact-list li img {
   height: 34px;
-  vertical-align: text-top;
+  vertical-align: bottom;
 }
-
-/*#contact-list li:not(:last-child)::after{
-  content: "/"
-}*/
 
 #contact-list li a {
   color: white;
@@ -63,7 +68,7 @@ section p, #portfolio-container {
 }
 
 #contact-title {
-  display: block;
+  display: none;
   font-size: 1.5rem;
   letter-spacing: -.08em;
   margin-bottom: .5rem;
@@ -78,7 +83,7 @@ section p, #portfolio-container {
   background-size: cover;
   color: #E1F5FE;
   font-family: "Roboto Slab", serif;
-  height: 600px;
+  height: 500px;
   overflow: hidden;
   text-align: center;
   width: 100%;
@@ -124,7 +129,7 @@ section p, #portfolio-container {
   font-family: 'Pacifico', cursive;
   font-weight: 100;
   font-size: 2em;
-  margin: 1rem 0;
+  margin: 1rem 1rem 1rem 0;
   text-align: right;
 }
 
@@ -133,6 +138,11 @@ section p, #portfolio-container {
     width: 75%;
     margin: 0 auto;
   }
+
+  #contact-title {
+    display: block;
+  }
+
   #page-title {
     font-size: 2rem;
   }
@@ -142,5 +152,9 @@ section p, #portfolio-container {
     line-height: 18rem;
     letter-spacing: -.25em;
     width: 18rem;
+  }
+
+  #title-block {
+    height: 600px;
   }
 }
