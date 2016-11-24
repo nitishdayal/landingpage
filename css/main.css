@@ -37,19 +37,17 @@ section:nth-child(even) {
 
 section p, #portfolio-container {
   text-align: justify;
-  text-indent: 1rem;
+  text-indent: 1.5rem;
   padding: 1em;
 
 }
 
 #contact-list {
-  background-color: rgba(0, 0, 0, 0.2);
-  outline: 1pt outset rgba(0, 0, 0, .3);
   color: white;
   font-size: 1.4em;
   list-style: none;
   padding: 1rem;
-  margin: 2rem auto;
+  margin: .5eval rem auto;
   width: 300px;
 }
 
@@ -68,7 +66,7 @@ section p, #portfolio-container {
 }
 
 #contact-title {
-  display: none;
+  display: block;
   font-size: 1.5rem;
   letter-spacing: -.08em;
   margin-bottom: .5rem;
@@ -110,11 +108,12 @@ section p, #portfolio-container {
 }
 
 #page-title {
-  color: white;
   background: rgba(0, 0, 0, 0.5);
-  margin-top: 1em;
+  color: white;
   font-size: 1.8rem;
   line-height: 1.8rem;
+  margin-top: 1em;
+  padding: .5rem;
 }
 
 #page-title small {
@@ -137,6 +136,11 @@ section p, #portfolio-container {
   #content {
     width: 75%;
     margin: 0 auto;
+  }
+
+  #contact-list {
+    background-color: rgba(0, 0, 0, 0.2);
+    outline: 1pt outset rgba(0, 0, 0, .3);
   }
 
   #contact-title {
