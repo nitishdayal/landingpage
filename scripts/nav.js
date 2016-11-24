@@ -5,8 +5,12 @@ $(document).ready(function() {
    */
 
   $('a[href*="#"]:not([href="#"])').click(function(e) {
-    if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '')
-        && location.hostname === this.hostname) 
+
+    e.preventDefault();
+
+    if (location.pathname.replace(/^\//, '') === 
+      this.pathname.replace(/^\//, '') && 
+      location.hostname === this.hostname) 
     {
       var link_item = '.nav-links li a';
 

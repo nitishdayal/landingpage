@@ -16,8 +16,8 @@ body {
 }
 
 section {
-  padding: 2rem 0;
   height: 1200px;
+  padding: 2rem 0;
   overflow: auto;
 }
 
@@ -36,18 +36,17 @@ section:nth-child(even) {
 }
 
 section p, #portfolio-container {
+  padding: 1em;
   text-align: justify;
   text-indent: 1.5rem;
-  padding: 1em;
-
 }
 
 #contact-list {
   color: white;
   font-size: 1.4em;
   list-style: none;
-  padding: 1rem;
   margin: .5rem auto;
+  padding: 1rem;
   width: 300px;
 }
 
@@ -60,18 +59,13 @@ section p, #portfolio-container {
   vertical-align: bottom;
 }
 
-#contact-list li a {
-  color: white;
-  text-decoration: none;
-}
-
 #contact-title {
   display: block;
   font-size: 1.5rem;
-  letter-spacing: -.08em;
+  font-variant: small-caps;
+  font-weight: 400;
   margin-bottom: .5rem;
   opacity: .8;
-
 }
 
 #title-block {
@@ -101,9 +95,9 @@ section p, #portfolio-container {
   box-sizing: content-box;
   font-size: 12rem;
   font-weight: 700;
+  letter-spacing: -.22em;
   line-height: 12rem;
   margin: 2rem auto;
-  letter-spacing: -.22em;
   width: 15rem;
 }
 
@@ -123,16 +117,17 @@ section p, #portfolio-container {
 }
 
 .section-title {
-  color: #eee;
   border-bottom: 1px solid rgba(112, 144, 153, .2);
+  color: #eee;
   font-family: 'Pacifico', cursive;
-  font-weight: 100;
   font-size: 2em;
+  font-weight: 100;
   margin: 1rem 1rem 1rem 0;
   text-align: right;
 }
 
 @media (min-width: 600px) {
+
   #content {
     width: 75%;
     margin: 0 auto;
@@ -162,4 +157,3 @@ section p, #portfolio-container {
     height: 600px;
   }
 }
-
