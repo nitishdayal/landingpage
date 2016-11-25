@@ -46,9 +46,10 @@ section p, #portfolio-container {
   padding: 0 auto;
 }
 
-.about strong {
+.about em {
   font-variant: small-caps;
   font-weight: 400;
+  font-style: normal;
   color: lightsteelblue;
   text-transform: uppercase;
 }
