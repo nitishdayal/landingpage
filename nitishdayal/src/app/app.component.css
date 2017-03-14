@@ -1,0 +1,131 @@
+#main {
+  width: 100vw;
+}
+
+#last {
+  min-height: 30vh;
+}
+
+.cardthingie {
+  margin: 1em auto;
+  height: 80%;
+}
+.icon {
+  padding: 0 .3em;
+}
+.navvynav {
+  width: 100%;
+  justify-content: center;
+  text-justify: center;
+  text-align: center;
+}
+
+#contact {
+  background-image: url("https://github.com/nitishdayal/landingpage/blob/master/img/header-bg.jpeg?raw=true");
+  min-height:400px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #E1F5FE;
+  font-family: "Roboto Slab", serif;
+  height: 92vh;
+  overflow: hidden;
+  text-align: center;
+  margin-top: 3em;
+}
+
+#contact-list {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  font-size: 1.4em;
+  list-style: none;
+  margin: .5rem auto;
+  outline: 1pt outset rgba(0, 0, 0, .3);
+  padding: 1rem;
+  width: 300px;
+}
+
+#contact-list li {
+  display: inline-block;
+}
+
+#contact-list li img {
+  height: 34px;
+  vertical-align: bottom;
+}
+
+#contact-title {
+  display: block;
+  font-size: 1.5rem;
+  font-variant: small-caps;
+  font-weight: 400;
+  margin-bottom: .5rem;
+}
+#logo {
+  background: rgba(0, 0, 0, 0.5);
+  border-top: .5rem solid rgba(112, 144, 153, .8);
+  border-left: .5rem solid rgba(112, 144, 153, .8);
+  border-bottom: .5rem solid rgba(112, 144, 153, .8);
+  box-sizing: content-box;
+  color: white;
+  font-family: "Roboto Slab", serif;
+  font-size: 12rem;
+  font-weight: 700;
+  letter-spacing: -.22em;
+  line-height: 12rem;
+  margin: 2rem auto;
+  width: 15rem;
+}
+
+#page-title {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  margin-top: 1em;
+  padding: .5rem;
+}
+
+#page-title small {
+  display: block;
+  font-weight: 100;
+}
+
+.title-text {
+  display: none;
+}
+.fuller {
+  height:100vh;
+}
+@media (min-width: 640px) {
+
+  .cardthingie {
+    margin: 1em auto;
+    width: 50vw;
+    height: 60vh;
+  }
+
+  .navvynav {
+    width: 25vw;
+    justify-content: center;
+    text-justify: center;
+    text-align: center;
+  }
+
+  #logo {
+    font-size: 18rem;
+    line-height: 18rem;
+    letter-spacing: -.25em;
+    width: 18rem;
+  }
+
+  .title-text {
+    display: initial;
+  }
+
+  #contact {
+    height: 60vh;
+    min-height: 600px;
+  }
+
+}

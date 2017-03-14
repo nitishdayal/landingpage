@@ -1,0 +1,45 @@
+<md-card [style.overflow]="'scroll'">
+  <md-card-header>
+    <md-card-title>
+      {{name}}
+    </md-card-title>
+    <span class="spacer"></span>
+    <span mdTooltip="Open Sidenav" mdTooltipPosition="before">
+      <button
+        md-mini-fab
+        color="primary"
+        (click)="toggle()"
+        [style.display]="!nav && 'none'"
+      >
+        <md-icon>add</md-icon>
+      </button>
+    </span>
+  </md-card-header>
+  <md-card-subtitle>
+    <p>ACTIVELY SEEKING FULL-TIME EMPLOYMENT</p>
+  </md-card-subtitle>
+  <md-divider></md-divider>
+  <md-card-content>
+    <div id="portrait" alt="Headshot Picture">
+    </div>
+    <p>
+      Current Focus: Full-stack Angular/React + Node + Socket.io, functional programming
+    </p>
+    <p>
+      Full-stack Javascript developer with an interest in modern/trending technology and their real-world applications.
+    </p>
+    <p>
+      I have created full-stack (MEAN, React/Angular + Firebase, React/Angular + Express) and client-side applications (React,
+      Angular), as well as consumable APIs for mobile applications. I have a strong grasp of object-oriented programming
+      principles and design patterns, and am currently studying functional and functional-reactive programming and their
+      applications in single-page application development.
+    </p>
+    <p>
+      I currently work at A Place For Mom/You've Got Leads as a Front-End Developer, and work on/help maintain open source software
+      on the side, the most notable projects being Webpack and Create-React-App.
+    </p>
+    <p>
+      I'm looking for opportunities as a front-end or full-stack JavaScript developer in the Bellevue/Greater Seattle area.
+    </p>
+  </md-card-content>
+</md-card>

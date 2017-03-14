@@ -1,0 +1,94 @@
+<section id="contact">
+  <header id="title-block">
+    <div id="logo">ND</div>
+    <h1 id="page-title">Nitish Dayal<small>Web &amp; Mobile Applications Developer</small></h1>
+    <ul id="contact-list"><span id="contact-title">Contact</span>
+      <li>
+        <a href="https://www.linkedin.com/in/nitishdayal" target="_blank" title="LinkedIn">
+          <img mdTooltip="LinkedIn" mdTooltipPosition="before" src="https://github.com/nitishdayal/landingpage/blob/master/img/linkedin.png?raw=true"
+            alt="LinkedIn">
+        </a>
+      </li>
+      <li>
+        <a mdTooltip="Github" mdTooltipPosition="below" href="https://www.github.com/nitishdayal" target="_blank" title="GitHub">
+          <img src="https://github.com/nitishdayal/landingpage/blob/master/img/github.png?raw=true" alt="GitHub">
+        </a>
+      </li>
+      <li>
+        <a href="https://twitter.com/nitish_dayal" class="twitter-follow-button" data-size="large" data-show-screen-name="false"
+          data-lang="en" data-dnt="true" data-show-count="false"><span mdTooltip="Twitter" mdTooltipPosition="below">Twitter</span></a>
+        <script src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </li>
+      <li>
+        <a href="mailto:contact@nitishdayal.me" mdTooltip="Mail" mdTooltipPosition="after">
+          <img src="https://github.com/nitishdayal/landingpage/blob/master/img/mail.png?raw=true" alt="Email" title="Email"></a>
+      </li>
+    </ul>
+  </header>
+</section>
+<md-card style="padding: 0;">
+  <md-toolbar style="background-color: black; position: fixed; top: 0; z-index: auto;">
+    <span class="title-text">
+    <p>Nitish Dayal <small> | I do the JavaScripts</small></p>
+    </span>
+    <span class="spacer"></span>
+    <p>Contact: </p>
+    <md-icon mdTooltip="LinkedIn" mdTooltipPosition="below" color="accent" class="icon">contact_mail</md-icon>
+    <md-icon mdTooltip="Github" mdTooltipPosition="below" color="accent" class="icon">code</md-icon>
+    <md-icon mdTooltip="Twitter" mdTooltipPosition="below" color="accent" class="icon">repeat</md-icon>
+    <md-icon mdTooltip="Mail" mdTooltipPosition="below" color="accent" class="icon">email</md-icon>
+
+  </md-toolbar>
+
+  <md-card style="padding: 0">
+    <md-sidenav-container id="main">
+
+      <md-tab-group dynamicHeight [headerPosition]="below" [selectedIndex]=3 class="fuller">
+        <md-tab label="About">
+          <div class="cardthingie">
+            <app-another name='About'></app-another>
+          </div>
+        </md-tab>
+
+        <md-tab label="Projects">
+          <div class="cardthingie">
+            <app-another name='Projects'></app-another>
+          </div>
+        </md-tab>
+
+        <md-tab label="Skillset">
+          <div class="cardthingie">
+            <app-another name='Skillset'></app-another>
+          </div>
+        </md-tab>
+
+        <md-tab label="Contact">
+          <div class="cardthingie">
+            <app-another name='Contact' [nav]="nav"></app-another>
+          </div>
+        </md-tab>
+
+      </md-tab-group>
+
+      <md-sidenav #nav mode="over" class="navvynav" align="end">
+        <md-toolbar color="accent">
+          MEOWMEOWMEOW
+        </md-toolbar>
+        <md-nav-list>
+          <a md-list-item>Linky Link</a>
+          <a md-list-item>Linky Link</a>
+          <a md-list-item>Linky Link</a>
+          <a md-list-item>Linky Link</a>
+          <div style="height: 20vh; display: hidden;"></div>
+          <md-toolbar color="accent">
+            CLOSE THIS STUPID SHIT JESUS
+          </md-toolbar>
+          <a md-list-item (click)="nav.toggle()">
+          Close<md-icon>keyboard_arrow_right</md-icon>
+        </a>
+        </md-nav-list>
+      </md-sidenav>
+
+    </md-sidenav-container>
+  </md-card>
+</md-card>
