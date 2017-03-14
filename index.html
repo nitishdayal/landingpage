@@ -1,130 +1,17 @@
-<!DOCTYPE html>
-<html lang="en-US">
+<!doctype html>
+<html>
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <title>Nitish Dayal - Web &amp; Mobile Applications Developer</title>
-
-  <!-- Load Google Fonts & Material Icons-->
-  <link href="https://fonts.googleapis.com/css?family=Poppins|Roboto+Slab:300,400|Pacifico"
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- Load Google Fonts & Material Icons-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins|Roboto+Slab:300"
   rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    rel="stylesheet">
-
-  <!-- Normalize.css provided by https://github.com/necolas/normalize.css/ -->
-  <link rel="stylesheet" href="css/normalize.css">
-
-  <!-- Custom CSS stylesheets for responsive navbar and main page-->
-  <link rel="stylesheet" href="css/responsive-nav.css">
-  <link rel="stylesheet" href="css/main.css">
-
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
-</head>
-<body>
-  <!-- Page header & contact options -->
-  <div id="contact">
-    <header id="title-block">
-      <div id="logo">ND</div>
-      <h1 id="page-title">Nitish Dayal<small>Web &amp; Mobile Applications Developer</small></h1>
-      <ul id="contact-list"><span id="contact-title">Contact</span id="contact-title">
-        <li>
-          <a href="https://www.linkedin.com/in/nitishdayal" target="_blank"
-          title="LinkedIn">
-            <img src="img/linkedin.png" alt="LinkedIn">
-          </a>
-        </li>
-        <li>
-          <a href="https://www.github.com/nitishdayal" target="_blank"
-          title="GitHub">
-            <img src="img/github.png" alt="GitHub">
-          </a>
-        </li>
-        <li>
-          <a href="https://twitter.com/nitish_dayal"
-          class="twitter-follow-button" data-size="large"
-          data-show-screen-name="false" data-lang="en"
-          data-dnt="true" data-show-count="false">Twitter</a>
-          <script src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </li>
-        <li>
-          <a href="mailto:contact@nitishdayal.me">
-          <img src="img/mail.png" alt="Email" title="Email"></a>
-        </li>
-      </ul>
-    </header>
-  </div>
-
-  <!-- Navigation Links (one sloppy line because it's the only 
-       sure-fire way to avoid spacing issues) -->
-  <nav id="nav-bar">
-    <ul class="nav-links"><li><a href="#about" id="nav-item1">About</a></li><li><a href="#portfolio" id="nav-item2">Portfolio</a></li><li><a href="#skillset" id="nav-item3">Skillset</a></li><li><a href="#contact" id="nav-item4">Contact</a></li></ul>
-  </nav>
-
-  <!-- Main content block -->
-  <div id="content">
-
-    <section id="about">
-      <h2 class="section-title">About</h2>
-      <article>
-        <h3 class="article-title">Actively Seeking Full-Time Employment</h3>
-        <div id="portrait" alt="Headshot Picture">
-        </div>
-        <p class="about">Full Stack Web <em>(Python, JavaScript)</em> &amp; Mobile
-          <em>(iOS, Swift)</em> Developer with a propensity for <em>responsive design</em>
-          and efficient programming practices. Proficient grasp of <em>Object-Oriented
-          Programming</em> principles, and currently learning <em>Functional Reactive
-          Programming</em> and it's applications for single-page application development.
-        </p>
-        <p class="about">I would love to work with a forward-thinking, innovate team that is willing
-          to go 'outside the box' to solve new or existing problems. There's always a
-          better way to do things; I'm interested in <em>doing better together</em>.
-        </p>
-        <p class="about">
-        Current Favorite Technologies: <strong>TypeScript, Python 3, Swift 3, Angular 2, Django, PostgreSQL, Firebase, XCode, GraphQL</strong>
-        </p>
-      </article>
-    </section>
-
-    <section id="portfolio">
-      <h2 class="section-title">Portfolio &amp; Projects</h2>
-      <div id="portfolio-container">
-        <div class="project">Project 1</div>
-        <div class="project">Project 2</div>
-        <div class="project">Project 3</div>
-        <div class="project">Project 4</div>
-      </div>
-    </section>
-
-    <section id="skillset">
-      <h2 class="section-title">Technical Expertise</h2>
-      <article>
-        <p>
-          Quisque lamcorper, dolor vel rutrum egestas,
-          magna magna luctus nisl, vitae tristique ante dui tempus velit. In vel commodo ipsum.
-          Aenean eget ante sed felis varius vestibulum aliquet et ante. Donec volutpat orci id
-          turpis consequat, in dictum quam vehicula. Nunc hendrerit libero nec eros sagittis
-          laoreet. In mi eros, aliquet vitae eros et, faucibus iaculis lectus. Cum sociis natoque
-          penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas ut orci
-          tempus, tempus nulla sit amet, efficitur diam. Suspendisse feugiat purus et velit
-          semper consectetur. Cras in mi vel odio scelerisque consectetur. Ut et nulla quis
-          ex commodo porta congue nec leo. Fusce vitae fringilla diam. Aenean congue turpis
-          vitae sem imperdiet lobortis. Nam nisl magna, gravida consectetur vestibulum sed,
-          suscipit vel urna.
-        </p>
-      </article>
-    </section>
-
-  </div>
-
-  <!-- Load jQuery and custom JS scripts -->
-  <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-  <script src="scripts/nav.js"></script>
-</body>
+<link href="styles.2618295e058a7f6fdaeb.bundle.css" rel="stylesheet"/></head>
+<body class="mat-app-background">
+  <app-root>Loading...</app-root>
+<script type="text/javascript" src="inline.d0daaddbe71e6a3c1f5a.bundle.js"></script><script type="text/javascript" src="polyfills.374ab5c280a5d0f265fd.bundle.js"></script><script type="text/javascript" src="vendor.9c28f58731ffaeafbf8e.bundle.js"></script><script type="text/javascript" src="main.98b567f764dcc0ce646c.bundle.js"></script></body>
 </html>
